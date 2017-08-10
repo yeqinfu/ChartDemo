@@ -3,4 +3,5 @@
 一些需求，所以表格的实现参考了[XChart](https://github.com/xcltapestry/XCL-Charts)  
 
 ![](d.gif)
+![](f.gif)
 
