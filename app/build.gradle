@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId "com.ppandroid.chartdemo"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.blankj:utilcode:1.8.1'
+    compile "com.android.support:design:$support_version"
+    /**Kotlin*/
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    /**kotlin 反射包，包方法过大，谨慎添加*/
+    /*   compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"*/
+    compile "org.jetbrains.anko:anko-common:$anko_version"
+    //Optional compile for GCM (Google Cloud Messaging).
+    // compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+
+    compile "com.android.support:appcompat-v7:$support_version"
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    testCompile 'junit:junit:4.12'
+}

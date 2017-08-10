@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FitChart">
+        <attr name="strokeSize" format="dimension|reference" />
+        <attr name="valueStrokeColor" format="color|reference" />
+        <attr name="backStrokeColor" format="color|reference" />
+        <attr name="animationMode">
+            <enum name="linear" value="0" />
+            <enum name="overdraw" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="headview">
+        <attr name="backText" format="string|reference" />
+        <attr name="centerText" format="string|reference" />
+        <attr name="titleTheme">
+            <enum name="white" value="0" />
+            <enum name="black" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="verticalview">
+        <attr name="topText" format="string|reference" />
+        <attr name="bottomText" format="string|reference" />
+        <attr name="totalHeight" format="float|reference" />
+        <attr name="realHeight" format="float|reference" />
+        <attr name="lineColor" format="color|reference" />
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_05"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ppandroid.chartdemo.view.MultipleVerticalView
+                android:background="@color/chart_value_1"
+                android:id="@+id/v_multiple_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <Button
+                android:id="@+id/btn_multi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="START"/>
+
+           <include layout="@layout/yellowchartview"/>
+            <Button
+                android:id="@+id/btn_start_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="START"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.ppandroid.chartdemo.view.whellview.FitChartHalf
+                    android:id="@+id/fitChart"
+                    android:layout_height="250dp"
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    app:animationMode="overdraw"
+                    app:strokeSize="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxWidth="200dp"
+                        android:text="今日用电"
+                        android:textColor="#212121"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="24.54"
+                            android:textColor="@color/chart_value_1"
+                            android:textSize="30sp"/>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:padding="4dp"
+                            android:text="万kwh"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="累计：144765元"
+                        android:textColor="#757575"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="碳排放：192612.3kg"
+                        android:textColor="#757575"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add Values"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.ppandroid.chartdemo.graphical.demoview.DountChart01View
+                    android:id="@+id/v_dount_view"
+                    android:layout_centerInParent="true"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@color/white"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="本日用电"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="10.39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="万kwh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="START"/>
+            <com.ppandroid.chartdemo.view.HorizontalPercentageView
+                android:id="@+id/v_hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btn_hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="START"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
