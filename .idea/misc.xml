@@ -5,7 +5,7 @@
     <option name="formatter" value="ECLIPSE" />
     <option name="id" value="1492398328965" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../../newPro/BZW/java_formatter_ys.xml" />
+    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../newPro/BZW/java_formatter_ys.xml" />
     <option name="selectedJavaProfile" value="Java Conventions Formatter_YS" />
   </component>
   <component name="EntryPointsManager">
