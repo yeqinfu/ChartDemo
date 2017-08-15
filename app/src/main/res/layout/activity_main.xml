@@ -14,11 +14,17 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-5dp"/>
     <Button
-        android:id="@+id/button02"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="表格"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-5dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="波浪"/>
 
 </LinearLayout>
